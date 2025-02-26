@@ -8,6 +8,33 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+        <p>My<span>Book</span>List</p>
+        
+        <div class="form-group">
+			<lable>Title</lable>
+            <input type="text" id="title" required>
+			<label>Author</label>
+            <input type="text" id="author" required>
+			<label>ISBN#</label>
+            <input type="text" id="isbn" required>
+            <button id="submit">Add Book</button>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- Books will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
